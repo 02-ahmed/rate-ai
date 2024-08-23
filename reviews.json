@@ -1,0 +1,124 @@
+{
+  "reviews": [
+    {
+      "professor": "Dr. Sarah Johnson",
+      "subject": "Physics",
+      "stars": 4,
+      "review": "Dr. Johnson explains complex concepts clearly. Her enthusiasm for physics is contagious!"
+    },
+    {
+      "professor": "Prof. Michael Chen",
+      "subject": "Computer Science",
+      "stars": 5,
+      "review": "Brilliant instructor. Prof. Chen's practical approach to coding is incredibly helpful."
+    },
+    {
+      "professor": "Dr. Emily Rodriguez",
+      "subject": "Biology",
+      "stars": 3,
+      "review": "Knowledgeable, but lectures can be dry. More interactive sessions would be beneficial."
+    },
+    {
+      "professor": "Prof. David Lee",
+      "subject": "Mathematics",
+      "stars": 4,
+      "review": "Challenging course, but Prof. Lee is always available for extra help. Great problem-solving techniques."
+    },
+    {
+      "professor": "Dr. Lisa Thompson",
+      "subject": "Psychology",
+      "stars": 5,
+      "review": "Dr. Thompson's real-world examples make the material relatable and easy to understand."
+    },
+    {
+      "professor": "Prof. Robert Brown",
+      "subject": "History",
+      "stars": 2,
+      "review": "Lectures are monotonous. Prof. Brown needs to engage students more effectively."
+    },
+    {
+      "professor": "Dr. Amanda White",
+      "subject": "Chemistry",
+      "stars": 4,
+      "review": "Tough grader, but Dr. White's lab sessions are incredibly informative and well-organized."
+    },
+    {
+      "professor": "Prof. John Smith",
+      "subject": "English Literature",
+      "stars": 3,
+      "review": "Prof. Smith has extensive knowledge, but sometimes goes off-topic during discussions."
+    },
+    {
+      "professor": "Dr. Maria Garcia",
+      "subject": "Sociology",
+      "stars": 5,
+      "review": "Dr. Garcia's passion for the subject is inspiring. Her classes are always thought-provoking."
+    },
+    {
+      "professor": "Prof. Thomas Wilson",
+      "subject": "Economics",
+      "stars": 4,
+      "review": "Clear explanations of complex economic theories. Prof. Wilson's real-world applications are helpful."
+    },
+    {
+      "professor": "Dr. Rachel Green",
+      "subject": "Environmental Science",
+      "stars": 5,
+      "review": "Dr. Green's field trips and hands-on approach make learning both fun and effective."
+    },
+    {
+      "professor": "Prof. James Taylor",
+      "subject": "Philosophy",
+      "stars": 3,
+      "review": "Interesting topics, but Prof. Taylor's lectures can be hard to follow at times."
+    },
+    {
+      "professor": "Dr. Linda Martinez",
+      "subject": "Neuroscience",
+      "stars": 4,
+      "review": "Dr. Martinez's research-oriented teaching style is challenging but rewarding."
+    },
+    {
+      "professor": "Prof. William Chang",
+      "subject": "Political Science",
+      "stars": 2,
+      "review": "Prof. Chang seems disorganized and often unprepared for class discussions."
+    },
+    {
+      "professor": "Dr. Karen Lewis",
+      "subject": "Art History",
+      "stars": 5,
+      "review": "Dr. Lewis's passion for art is infectious. Her visual presentations are stunning and informative."
+    },
+    {
+      "professor": "Prof. Daniel Kim",
+      "subject": "Mechanical Engineering",
+      "stars": 4,
+      "review": "Prof. Kim's practical approach and industry experience add great value to the course."
+    },
+    {
+      "professor": "Dr. Jennifer Davis",
+      "subject": "Genetics",
+      "stars": 3,
+      "review": "Dr. Davis knows her stuff, but the pace of the course can be overwhelming at times."
+    },
+    {
+      "professor": "Prof. Mark Anderson",
+      "subject": "Business Administration",
+      "stars": 5,
+      "review": "Prof. Anderson's case study approach provides excellent real-world insights. Highly recommended!"
+    },
+    {
+      "professor": "Dr. Olivia Parker",
+      "subject": "Linguistics",
+      "stars": 4,
+      "review": "Dr. Parker's interactive teaching style makes learning languages enjoyable and effective."
+    },
+    {
+      "professor": "Prof. Samuel Wright",
+      "subject": "Anthropology",
+      "stars": 3,
+      "review": "Interesting material, but Prof. Wright could improve on making lectures more engaging."
+    }
+  ]
+}
