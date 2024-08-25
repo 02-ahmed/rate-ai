@@ -27,6 +27,9 @@ const theme = createTheme({
       default: "#f5f5f5",
     },
   },
+  typography: {
+    fontSize: 14,
+  },
 });
 
 export default function Home() {
@@ -90,7 +93,7 @@ export default function Home() {
   return (
     <ThemeProvider theme={theme}>
       <Box sx={{ height: "100vh", display: "flex", flexDirection: "column" }}>
-        <AppBar position="static">
+        <AppBar position="static" sx={{ mb: 0, boxShadow: 1 }}>
           <Toolbar>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
               ProFinder
@@ -120,64 +123,87 @@ export default function Home() {
                   <Paper
                     elevation={2}
                     sx={{
-                      p: "12px 15px",
+                      p: 2,
                       borderRadius: 3,
                       backgroundColor:
                         message.role === "assistant" ? "#ffffff" : "#e3f2fd",
                       maxWidth: "80%",
-                      padding: "25px",
                     }}
                   >
-                    {message.role === "assistant" ? (
-                      <Box sx={{ lineHeight: "30px" }}>
-                        <Markdown remarkPlugins={[remarkGfm]}>
-                          {message.content}
-                        </Markdown>
-                      </Box>
-                    ) : (
-                      <Box sx={{ fontSize: "16px" }}>{message.content}</Box>
-                    )}
+                    <Markdown remarkPlugins={[remarkGfm]}>
+                      {message.content}
+                    </Markdown>
                   </Paper>
                 </Box>
               ))}
               {isLoading && (
-                <Box sx={{ display: "flex", justifyContent: "center" }}>
-                  <CircularProgress />
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "flex-start",
+                    width: "100%",
+                  }}
+                >
+                  <Paper
+                    elevation={2}
+                    sx={{
+                      p: 2,
+                      borderRadius: 3,
+                      backgroundColor: "#ffffff",
+                      maxWidth: "80%",
+                      display: "flex",
+                      alignItems: "center",
+                    }}
+                  >
+                    <CircularProgress size={20} />
+                  </Paper>
                 </Box>
               )}
               <div ref={messagesEndRef} />
             </Stack>
           </Container>
         </Box>
-        <Paper
-          component="form"
+        <Box
           sx={{
-            p: "4px",
-            display: "flex",
-            alignItems: "center",
-            width: "100%",
-            backgroundColor: "#ffffff",
-            boxShadow: "0 -2px 10px rgba(0, 0, 0, 0.1)",
-          }}
-          onSubmit={(e) => {
-            e.preventDefault();
-            sendMessage();
+            backgroundColor: "background.default",
+            py: 2,
+            boxShadow: "0 -2px 5px rgba(0, 0, 0, 0.1)",
+            position: "sticky",
+            bottom: 0,
+            left: 0,
+            right: 0,
           }}
         >
-          <InputBase
-            sx={{
-              ml: 1,
-              flex: 1,
-              fontSize: "16px",
-            }}
-            placeholder="Type your message..."
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-          />
-          <IconButton type="submit" sx={{ p: "10px", color: "primary.main" }}>
-            <Send />
-          </IconButton>
-        </Paper>
+          <Container maxWidth="sm">
+            <Paper
+              component="form"
+              sx={{
+                p: "2px 4px",
+                display: "flex",
+                alignItems: "center",
+                width: "100%",
+                boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
+              }}
+              onSubmit={(e) => {
+                e.preventDefault();
+                sendMessage();
+              }}
+            >
+              <InputBase
+                sx={{ ml: 1, flex: 1 }}
+                placeholder="Type your message..."
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+              />
+              <IconButton
+                type="submit"
+                sx={{ p: "10px", color: "primary.main" }}
+              >
+                <Send />
+              </IconButton>
+            </Paper>
+          </Container>
+        </Box>
       </Box>
     </ThemeProvider>
   );
