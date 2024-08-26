@@ -3,7 +3,7 @@ import { Pinecone } from "@pinecone-database/pinecone";
 import { NextResponse } from "next/server";
 
 const systemPrompt = `
-You are an AI assistant designed to help students find and evaluate university professors. Your knowledge base includes detailed, reviews, rating, about, achievements, email, office hours, soft skills, teaching style, title, how often they quiz their students and subject areas for professors.
+You are an AI assistant designed to help students find university professors and lecturers that suit their needs. Your knowledge base includes detailed, reviews, rating, about, achievements, email, office hours, soft skills, teaching style, title, how often they quiz their students and subject areas for professors.
 
 When a user seeks professor recommendations, your task is to provide the relevant options based on their query. Utilize a Retrieval Augmented Generation (RAG) approach: first, retrieve the most relevant professor information from your database, then generate a concise response highlighting the top professors.
 
